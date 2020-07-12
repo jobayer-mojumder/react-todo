@@ -1,9 +1,12 @@
 import React from 'react'
+import './footer.css'
 
 function Footer() {
     return (
-        <footer className="footer">
-            <h4>This is a footer</h4>
+        <footer>
+            <div className="copyright">
+                <p><span dangerouslySetInnerHTML={{ "__html": "&copy;" }} /> 2020 - Optimus</p>
+            </div>
         </footer>
     );
 }
