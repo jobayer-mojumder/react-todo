@@ -8,9 +8,17 @@ import TodoItem from './components/todoItem/TodoItem'
 import todosData from './data/todosData'
 
 class App extends Component {
+
+	constructor() {
+		super()
+		this.state = {
+			todos: todosData
+		}
+	}
+
 	render() {
 
-		const todoList = todosData.map(element => {
+		const todoList = this.state.todos.map(element => {
 			return <TodoItem key={element.id} item={element} />
 		})
 
