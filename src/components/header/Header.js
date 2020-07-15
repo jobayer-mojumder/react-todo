@@ -3,14 +3,14 @@ import './header.css'
 
 class Header extends Component {
 
-    constructor() {
-        super()
-    }
+    // constructor() {
+    //     super()
+    // }
 
     render() {
         return (
             <div className="header">
-                <a href="#default" className="logo">CompanyLogo</a>
+                <a href="#default" className="logo">Optimus</a>
                 <div className="header-right">
                     <a href="#home">Home</a>
                 </div>

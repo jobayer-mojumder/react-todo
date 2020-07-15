@@ -3,9 +3,9 @@ import './footer.css'
 
 class Footer extends Component {
 
-    constructor() {
-        super()
-    }
+    // constructor() {
+    //     super()
+    // }
 
     render() {
         return (
