@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css'
 
 import Header from './components/header/Header'
@@ -7,7 +7,7 @@ import TodoItem from './components/todoItem/TodoItem'
 
 import todosData from './data/todosData'
 
-class App extends React.Component {
+class App extends Component {
 	render() {
 
 		const todoList = todosData.map(element => {
