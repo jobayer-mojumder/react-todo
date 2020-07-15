@@ -23,9 +23,10 @@ class App extends Component {
 			const updatedTodos = prevState.todos.map(todo => {
 
 				if (todo.id === id) {
-					const newTodo = { ...todo }
-					newTodo.completed = !todo.completed
-					return newTodo
+					return {
+						...todo,
+						completed: !todo.completed
+					}
 				}
 				return todo
 			})
